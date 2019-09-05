@@ -1,0 +1,13 @@
+name = "Zeus Operations Mod";
+picture = "logo_simplistic_white.paa";
+actionName = "Website";
+action = "https://www.zeusops.com/";
+description = "Zeus Operations Mod";
+logo = "logo_simplistic_white.paa";
+logoOver = "logo_simplistic_white.paa";
+tooltip = "Zeus Operations Mod";
+tooltipOwned = "Zeus Operations Mod";
+overview = "Zeus Operations Mod.";
+author = "Various";
+overviewPicture = "logo_simplistic_white.paa";
+overviewText = "Zeus Operations Mod";
