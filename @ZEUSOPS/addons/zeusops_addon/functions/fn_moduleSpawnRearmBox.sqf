@@ -24,8 +24,6 @@ _objects resize (count _objects - 1); // no idea what the last object in the arr
 	};
 } foreach _objects;
 
-systemChat format ["%1 - %2", _objects, _object];
-
 // Spawn rearm box
 if (isNull _object) then {
 	// Spawn rearm box

@@ -24,8 +24,6 @@ _objects resize (count _objects - 1); // no idea what the last object in the arr
 	};
 } foreach _objects;
 
-systemChat format ["%1 - %2", _objects, _object];
-
 // Spawn arsenal box
 if (isNull _object) then {
 	// Spawn arsenal box

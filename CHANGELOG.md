@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.1] - 2019-09-05
+### Fixed
+- functions not packed into addon.
+
 ## [1.0.0] - 2019-09-05
 ### Added
 - `fn_moduleBodybagPlayer` zeus module to bodybag players, including alive/unconscious players.
