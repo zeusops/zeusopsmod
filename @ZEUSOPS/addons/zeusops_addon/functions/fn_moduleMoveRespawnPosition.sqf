@@ -13,4 +13,4 @@ if (count objectcurators _logic > 0) then {
 
 // Move spawn
 missionNameSpace setVariable ["RESPAWN_POSITION", _pos, true];
-[objNull, "Moved Respawn position"] call bis_fnc_showCuratorFeedbackMessage;
+"Moved Respawn position" call zeusops_fnc_showCuratorMessage;

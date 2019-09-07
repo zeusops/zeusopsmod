@@ -28,9 +28,9 @@ _objects resize (count _objects - 1); // no idea what the last object in the arr
 if (isNull _object) then {
 	// Spawn arsenal box
 	[0, _pos] spawn ZO_fnc_gearBox;
-	[objNull, "Spawned Arsenal Box"] call bis_fnc_showCuratorFeedbackMessage;
+	"Spawned arsenal box" call zeusops_fnc_showCuratorMessage;
 } else {
 	// Make existing object an arsenal box
 	[2, _object] spawn ZO_fnc_gearBox;
-	[objNull, "Spawned Arsenal Box"] call bis_fnc_showCuratorFeedbackMessage;
+	"Made object an arsenal box" call zeusops_fnc_showCuratorMessage;
 };

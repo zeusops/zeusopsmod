@@ -1,5 +1,5 @@
 /*
-	@file_name: fn_moduleBodyBagPlayer.sqf
+	@file_name: fn_moduleBodybagAndRespawnPlayer.sqf
 	@file_author: Dyzalonius
 */
 
@@ -27,6 +27,7 @@ if (isNull _player) exitWith {
 	"Module needs to be placed on player" call zeusops_fnc_showCuratorMessage;
 };
 
-// Bodybag player
+// Bodybag and respawn player
 [objNull, _player] call ace_medical_fnc_actionPlaceInBodyBag;
-"Bodybagged player" call zeusops_fnc_showCuratorMessage;
+[] remoteExec ["zeusops_fnc_respawnPlayer", _player];
+"Bodybagged and respawned player" call zeusops_fnc_showCuratorMessage;

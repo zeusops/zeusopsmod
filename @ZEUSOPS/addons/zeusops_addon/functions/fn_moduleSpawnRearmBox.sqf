@@ -28,9 +28,9 @@ _objects resize (count _objects - 1); // no idea what the last object in the arr
 if (isNull _object) then {
 	// Spawn rearm box
 	[1, _pos] spawn ZO_fnc_gearBox;
-	[objNull, "Spawned Rearm Box"] call bis_fnc_showCuratorFeedbackMessage;
+	"Spawned rearm box" call zeusops_fnc_showCuratorMessage;
 } else {
 	// Make existing object a rearm box
 	[3, _object] spawn ZO_fnc_gearBox;
-	[objNull, "Spawned Rearm Box"] call bis_fnc_showCuratorFeedbackMessage;
+	"Made object a rearm box" call zeusops_fnc_showCuratorMessage;
 };

@@ -7,6 +7,7 @@ class CfgPatches
 		authorUrl="https://www.zeusops.com/";
 		units[]=
 		{
+			"zeusops_ModuleBodybagAndRespawnPlayer",
 			"zeusops_ModuleBodybagPlayer",
 			"zeusops_ModuleMoveRespawnPosition",
 			"zeusops_ModuleSpawnArsenalBox",
@@ -26,6 +27,9 @@ class CfgFunctions
 		class functions
 		{
 			file="\zeusops_addon\functions";
+			class moduleBodybagAndRespawnPlayer
+			{
+			};
 			class moduleBodybagPlayer
 			{
 			};
@@ -36,6 +40,12 @@ class CfgFunctions
 			{
 			};
 			class moduleSpawnRearmBox
+			{
+			};
+			class respawnPlayer
+			{
+			};
+			class showCuratorMessage
 			{
 			};
 		};
@@ -52,6 +62,19 @@ class CfgVehicles
 {
 	class Logic;
 	class Module_F: Logic {};
+	class zeusops_ModuleBodybagAndRespawnPlayer: Module_F
+	{
+		scope=1;
+		scopeCurator = 2;
+		displayName="Bodybag & respawn player";
+		category="zeusops_modules";
+		function="zeusops_fnc_moduleBodybagAndRespawnPlayer";
+		functionPriority=1;
+		isGlobal=0;
+		isTriggerActivated=1;
+		isDisposable=1;
+		is3DEN=0;
+	};
 	class zeusops_ModuleBodybagPlayer: Module_F
 	{
 		scope=1;

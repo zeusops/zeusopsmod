@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.2] - 2019-09-07
+### Added
+- `fn_moduleBodybagAndRespawnPlayer` zeus module to bodybag and respawn players, including alive/unconscious players.
+- `fn_respawnPlayer` to be able to respawn a player remotely, made for the zeus module.
+- `fn_showCuratorMessage` to  simplify curator feedback messages (which don't work in MP for an unknown reason).
+
 ## [1.0.1] - 2019-09-05
 ### Fixed
 - functions not packed into addon.
