@@ -1,6 +1,11 @@
 # Changelog
 
-## [1.0.2] - 2019-09-07
+## [1.1.1] - 2019-09-08
+### Fixed
+- Player spectator camera not on player when bodybagged with module.
+- Curator feedback messages showing up, only to the actor.
+
+## [1.1.0] - 2019-09-07
 ### Added
 - `fn_moduleBodybagAndRespawnPlayer` zeus module to bodybag and respawn players, including alive/unconscious players.
 - `fn_respawnPlayer` to be able to respawn a player remotely, made for the zeus module.

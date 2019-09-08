@@ -70,8 +70,8 @@ class CfgVehicles
 		category="zeusops_modules";
 		function="zeusops_fnc_moduleBodybagAndRespawnPlayer";
 		functionPriority=1;
-		isGlobal=0;
-		isTriggerActivated=1;
+		isGlobal=2;
+		isTriggerActivated=0;
 		isDisposable=1;
 		is3DEN=0;
 	};
@@ -83,8 +83,8 @@ class CfgVehicles
 		category="zeusops_modules";
 		function="zeusops_fnc_moduleBodybagPlayer";
 		functionPriority=1;
-		isGlobal=0;
-		isTriggerActivated=1;
+		isGlobal=2;
+		isTriggerActivated=0;
 		isDisposable=1;
 		is3DEN=0;
 	};
@@ -96,8 +96,8 @@ class CfgVehicles
 		category="zeusops_modules";
 		function="zeusops_fnc_moduleMoveRespawnPosition";
 		functionPriority=1;
-		isGlobal=0;
-		isTriggerActivated=1;
+		isGlobal=2;
+		isTriggerActivated=0;
 		isDisposable=1;
 		is3DEN=0;
 	};
@@ -110,7 +110,7 @@ class CfgVehicles
 		function="zeusops_fnc_moduleSpawnArsenalBox";
 		functionPriority=1;
 		isGlobal=0;
-		isTriggerActivated=1;
+		isTriggerActivated=0;
 		isDisposable=1;
 		is3DEN=0;
 	};
@@ -123,7 +123,7 @@ class CfgVehicles
 		function="zeusops_fnc_moduleSpawnRearmBox";
 		functionPriority=1;
 		isGlobal=0;
-		isTriggerActivated=1;
+		isTriggerActivated=0;
 		isDisposable=1;
 		is3DEN=0;
 	};
