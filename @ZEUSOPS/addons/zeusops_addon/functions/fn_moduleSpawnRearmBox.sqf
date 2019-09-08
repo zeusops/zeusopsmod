@@ -8,17 +8,7 @@ _logic = _this param [0,objNull];
 _pos = position _logic;
 
 // Find object
-_object = objNull;
-_objectDistance = 3; // bigger than 2
-_objects = (_pos nearEntities 2);
-_objects resize (count _objects - 1); // no idea what the last object in the array is, maybe cursor of curator.
-{
-	_distance = _pos distance _x;
-	if (_distance < _objectDistance) then {
-		_object = _x;
-		_objectDistance = _distance;
-	};
-} foreach _objects;
+_object = _logic call zeusops_fnc_getUnitUnderCursor;
 
 // Spawn rearm box
 if (isNull _object) then {

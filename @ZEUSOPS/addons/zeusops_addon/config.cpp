@@ -27,6 +27,9 @@ class CfgFunctions
 		class functions
 		{
 			file="\zeusops_addon\functions";
+			class getUnitUnderCursor
+			{
+			};
 			class moduleBodybagAndRespawnPlayer
 			{
 			};
