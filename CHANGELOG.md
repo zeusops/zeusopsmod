@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.2] - 2019-09-14
+### Fixed
+- Forgot to repack the addon in 1.2.1.
+
 ## [1.2.1] - 2019-09-14
 ### Fixed
 - `fn_moduleToggleRespawn` was not exiting when not local instance.
