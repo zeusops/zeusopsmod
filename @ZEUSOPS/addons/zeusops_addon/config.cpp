@@ -27,27 +27,14 @@ class CfgFunctions
 		class functions
 		{
 			file="\zeusops_addon\functions";
-			class moduleBodybagAndRespawnPlayer
-			{
-			};
-			class moduleBodybagPlayer
-			{
-			};
-			class moduleMoveRespawnPosition
-			{
-			};
-			class moduleSpawnArsenalBox
-			{
-			};
-			class moduleSpawnRearmBox
-			{
-			};
-			class respawnPlayer
-			{
-			};
-			class showCuratorMessage
-			{
-			};
+			class getUnitUnderCursor;
+			class moduleBodybagAndRespawnPlayer;
+			class moduleBodybagPlayer;
+			class moduleMoveRespawnPosition;
+			class moduleSpawnArsenalBox;
+			class moduleSpawnRearmBox;
+			class respawnPlayer;
+			class showCuratorMessage;
 		};
 	};
 };
