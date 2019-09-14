@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.2.0] - 2019-09-14
+### Added
+- `fn_moduleForceRespawnWave` zeus module to force a respawn wave.
+- `fn_moduleToggleRespawn` zeus module to toggle all respawns (both wave and auto). Enabling respawn also triggers a wave immediately.
+
 ## [1.1.1] - 2019-09-08
 ### Fixed
 - Player spectator camera not on player when bodybagged with module.
