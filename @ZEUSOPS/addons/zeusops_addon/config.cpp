@@ -9,9 +9,11 @@ class CfgPatches
 		{
 			"zeusops_ModuleBodybagAndRespawnPlayer",
 			"zeusops_ModuleBodybagPlayer",
+			"zeusops_ModuleForceRespawnWave",
 			"zeusops_ModuleMoveRespawnPosition",
 			"zeusops_ModuleSpawnArsenalBox",
-			"zeusops_ModuleSpawnRearmBox"
+			"zeusops_ModuleSpawnRearmBox",
+			"zeusops_ModuleToggleRespawn"
 		};
 		requiredAddons[]=
 		{
@@ -30,9 +32,11 @@ class CfgFunctions
 			class getUnitUnderCursor;
 			class moduleBodybagAndRespawnPlayer;
 			class moduleBodybagPlayer;
+			class moduleForceRespawnWave;
 			class moduleMoveRespawnPosition;
 			class moduleSpawnArsenalBox;
 			class moduleSpawnRearmBox;
+			class moduleToggleRespawn;
 			class respawnPlayer;
 			class showCuratorMessage;
 		};
@@ -49,69 +53,54 @@ class CfgVehicles
 {
 	class Logic;
 	class Module_F: Logic {};
-	class zeusops_ModuleBodybagAndRespawnPlayer: Module_F
+	class zeusops_ModuleBase : Module_F
 	{
-		scope=1;
-		scopeCurator = 2;
+		category="zeusops_modules";
+		scope=1; // not visible in editor
+		scopeCurator = 2; // visible in zeus
+		isGlobal=2; // ran globally
+		functionPriority=1;
+		isTriggerActivated=0;
+		isDisposable=1;
+		is3DEN=0;
+	};
+	class zeusops_ModuleBodybagAndRespawnPlayer: zeusops_ModuleBase
+	{
 		displayName="Bodybag & respawn player";
-		category="zeusops_modules";
 		function="zeusops_fnc_moduleBodybagAndRespawnPlayer";
-		functionPriority=1;
-		isGlobal=2;
-		isTriggerActivated=0;
-		isDisposable=1;
-		is3DEN=0;
 	};
-	class zeusops_ModuleBodybagPlayer: Module_F
+	class zeusops_ModuleBodybagPlayer: zeusops_ModuleBase
 	{
-		scope=1;
-		scopeCurator = 2;
 		displayName="Bodybag player";
-		category="zeusops_modules";
 		function="zeusops_fnc_moduleBodybagPlayer";
-		functionPriority=1;
-		isGlobal=2;
-		isTriggerActivated=0;
-		isDisposable=1;
-		is3DEN=0;
 	};
-	class zeusops_ModuleMoveRespawnPosition: Module_F
+	class zeusops_ModuleForceRespawnWave: zeusops_ModuleBase
 	{
-		scope=1;
-		scopeCurator = 2;
+		displayName="Force respawn wave";
+		function="zeusops_fnc_moduleForceRespawnWave";
+	};
+	class zeusops_ModuleMoveRespawnPosition: zeusops_ModuleBase
+	{
 		displayName="Move respawn position";
-		category="zeusops_modules";
 		function="zeusops_fnc_moduleMoveRespawnPosition";
-		functionPriority=1;
-		isGlobal=2;
-		isTriggerActivated=0;
-		isDisposable=1;
-		is3DEN=0;
 	};
-	class zeusops_ModuleSpawnArsenalBox: Module_F
+	class zeusops_ModuleSpawnArsenalBox: zeusops_ModuleBase
 	{
-		scope=2;
-		scopeCurator = 2;
 		displayName="Spawn Arsenal Box";
-		category="zeusops_modules";
 		function="zeusops_fnc_moduleSpawnArsenalBox";
-		functionPriority=1;
-		isGlobal=0;
-		isTriggerActivated=0;
-		isDisposable=1;
-		is3DEN=0;
+		scope=2; // visible in editor
+		isGlobal=0; // not ran globally
 	};
-	class zeusops_ModuleSpawnRearmBox: Module_F
+	class zeusops_ModuleSpawnRearmBox: zeusops_ModuleBase
 	{
-		scope=2;
-		scopeCurator = 2;
 		displayName="Spawn Rearm Box";
-		category="zeusops_modules";
 		function="zeusops_fnc_moduleSpawnRearmBox";
-		functionPriority=1;
-		isGlobal=0;
-		isTriggerActivated=0;
-		isDisposable=1;
-		is3DEN=0;
+		scope=2; // visible in editor
+		isGlobal=0; // not ran globally
+	};
+	class zeusops_ModuleToggleRespawn: zeusops_ModuleBase
+	{
+		displayName="Toggle respawn";
+		function="zeusops_fnc_moduleToggleRespawn";
 	};
 };
