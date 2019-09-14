@@ -3,13 +3,11 @@
 	@file_author: Dyzalonius
 */
 
-_curatorMouseOver = zeusops_curatorMouseOver;
+_curatorMouseOver = Ares_CuratorObjectPlaced_UnitUnderCursor;
 
 _unitUnderCursor = objNull;
 if (count _curatorMouseOver == 2) then {
 	_unitUnderCursor = (_curatorMouseOver select 1);
 };
-
-systemChat format ["%1", _unitUnderCursor]; // DEBUG
 
 _unitUnderCursor;

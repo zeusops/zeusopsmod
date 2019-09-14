@@ -27,30 +27,16 @@ class CfgFunctions
 		class functions
 		{
 			file="\zeusops_addon\functions";
-			class getUnitUnderCursor
-			{
-			};
-			class moduleBodybagAndRespawnPlayer
-			{
-			};
-			class moduleBodybagPlayer
-			{
-			};
-			class moduleMoveRespawnPosition
-			{
-			};
-			class moduleSpawnArsenalBox
-			{
-			};
-			class moduleSpawnRearmBox
-			{
-			};
-			class respawnPlayer
-			{
-			};
-			class showCuratorMessage
-			{
-			};
+			class getUnitUnderCursor;
+			class handleCuratorObjectPlaced;
+			class moduleBodybagAndRespawnPlayer;
+			class moduleBodybagPlayer;
+			class moduleMoveRespawnPosition;
+			class moduleSpawnArsenalBox;
+			class moduleSpawnRearmBox;
+			class onDisplayCuratorLoad;
+			class respawnPlayer;
+			class showCuratorMessage;
 		};
 	};
 };
@@ -130,4 +116,11 @@ class CfgVehicles
 		isDisposable=1;
 		is3DEN=0;
 	};
+};
+class RscDisplayCurator
+{
+	// couple zeusops init with curator display
+	//onLoad = "[_this select 0] call zeusops_fnc_onDisplayCuratorLoad;";
+	//onLoad = "[_this select 0] call Achilles_fnc_onDisplayCuratorLoad;";
+	//onUnload = "[_this select 0] call zeusops_fnc_onDisplayCuratorUnload;";
 };
