@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.1] - 2019-09-14
+### Fixed
+- `fn_moduleToggleRespawn` was not exiting when not local instance.
+
 ## [1.2.0] - 2019-09-14
 ### Added
 - `fn_moduleForceRespawnWave` zeus module to force a respawn wave.

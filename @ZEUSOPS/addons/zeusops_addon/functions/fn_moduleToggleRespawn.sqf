@@ -5,8 +5,8 @@
 
 _logic = _this param [0,objNull];
 
-// Exit if it's not activated (purposefully not quitting when not local, so that all zeuses see the message)
-if (!(_this select 2)) exitWith {};
+// Exit if module wasn't created by this instance, or if it's not activated
+if (!local _logic || !(_this select 2)) exitWith {};
 
 // Toggle respawn
 if (missionNameSpace getVariable "respawnAllow") then {
