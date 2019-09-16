@@ -89,14 +89,12 @@ class CfgVehicles
 		displayName="Spawn Arsenal Box";
 		function="zeusops_fnc_moduleSpawnArsenalBox";
 		scope=2; // visible in editor
-		isGlobal=0; // not ran globally
 	};
 	class zeusops_ModuleSpawnRearmBox: zeusops_ModuleBase
 	{
 		displayName="Spawn Rearm Box";
 		function="zeusops_fnc_moduleSpawnRearmBox";
 		scope=2; // visible in editor
-		isGlobal=0; // not ran globally
 	};
 	class zeusops_ModuleToggleRespawn: zeusops_ModuleBase
 	{

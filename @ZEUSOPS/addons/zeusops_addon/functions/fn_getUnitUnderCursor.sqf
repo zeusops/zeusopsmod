@@ -3,6 +3,8 @@
 	@file_author: Dyzalonius
 */
 
+if (isNil "Achilles_curator_init_done" || isNil "Ares_CuratorObjectPlaced_UnitUnderCursor") exitWith {objNull;};
+
 _curatorMouseOver = Ares_CuratorObjectPlaced_UnitUnderCursor;
 
 _unitUnderCursor = objNull;

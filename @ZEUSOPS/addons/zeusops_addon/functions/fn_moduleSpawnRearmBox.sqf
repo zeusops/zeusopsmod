@@ -5,6 +5,9 @@
 
 _logic = _this param [0,objNull];
 
+// Exit if module wasn't created by this instance, or if it's not activated
+if (!local _logic || !(_this select 2)) exitWith {};
+
 _pos = position _logic;
 
 // Find object
@@ -12,13 +15,19 @@ _object = _logic call zeusops_fnc_getUnitUnderCursor;
 
 // Spawn rearm box
 if (isNull _object) then {
-	// Spawn rearm box
-	[1, _pos] spawn ZO_fnc_gearBox;
+	// Spawn ammobox
+	_object = createVehicle ["B_supplyCrate_F", _pos, [], 0, "CAN_COLLIDE"];
+	_object setDir (round random 360);
+
+	// Allow zeuses to move the ammobox
+	[(getAssignedCuratorLogic player),[[_object],true]] remoteExec ["addCuratorEditableObjects", allCurators, true];
+
+	[3, _object] spawn ZO_fnc_gearBox;
 	"Spawned rearm box" call zeusops_fnc_showCuratorMessage;
 } else {
-	// Make existing object a rearm box
+	// Make existing object an rearm box
 	[3, _object] spawn ZO_fnc_gearBox;
-	"Made object a rearm box" call zeusops_fnc_showCuratorMessage;
+	"Made object an rearm box" call zeusops_fnc_showCuratorMessage;
 };
 
 // Delete module

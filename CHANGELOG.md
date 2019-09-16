@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.2.3] - 2019-09-16
+### Fixed
+- Arsenal & rearm modules not sending curator messages.
+- Modules placed in editor causing error because `fn_getUnitUnderCursor` uses a variable that doesn't exist yet.
+
 ## [1.2.2] - 2019-09-14
 ### Fixed
 - Forgot to repack the addon in 1.2.1.
