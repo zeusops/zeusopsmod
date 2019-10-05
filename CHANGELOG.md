@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0] - 2019-10-06
+### Added
+- Icons for all modules.
+
+### Fixed
+- Bodybag and respawn module not working because of using 'exitWith' after an if statement instead of 'then'.
+
 ## [1.2.3] - 2019-09-16
 ### Fixed
 - Arsenal & rearm modules not sending curator messages.

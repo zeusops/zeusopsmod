@@ -63,42 +63,50 @@ class CfgVehicles
 		isTriggerActivated=0;
 		isDisposable=1;
 		is3DEN=0;
+		icon="\zeusops_addon\icons\icon_logo_zeusops.paa";
 	};
 	class zeusops_ModuleBodybagAndRespawnPlayer: zeusops_ModuleBase
 	{
 		displayName="Bodybag & respawn player";
 		function="zeusops_fnc_moduleBodybagAndRespawnPlayer";
+		icon="\zeusops_addon\icons\icon_reaper.paa";
 	};
 	class zeusops_ModuleBodybagPlayer: zeusops_ModuleBase
 	{
 		displayName="Bodybag player";
 		function="zeusops_fnc_moduleBodybagPlayer";
+		icon="\zeusops_addon\icons\icon_reaper.paa";
 	};
 	class zeusops_ModuleForceRespawnWave: zeusops_ModuleBase
 	{
 		displayName="Force respawn wave";
 		function="zeusops_fnc_moduleForceRespawnWave";
+		icon="\zeusops_addon\icons\icon_respawn.paa";
 	};
 	class zeusops_ModuleMoveRespawnPosition: zeusops_ModuleBase
 	{
 		displayName="Move respawn position";
 		function="zeusops_fnc_moduleMoveRespawnPosition";
+		icon="\zeusops_addon\icons\icon_respawn.paa";
 	};
 	class zeusops_ModuleSpawnArsenalBox: zeusops_ModuleBase
 	{
 		displayName="Spawn Arsenal Box";
 		function="zeusops_fnc_moduleSpawnArsenalBox";
+		icon="\zeusops_addon\icons\icon_ammobox.paa";
 		scope=2; // visible in editor
 	};
 	class zeusops_ModuleSpawnRearmBox: zeusops_ModuleBase
 	{
 		displayName="Spawn Rearm Box";
 		function="zeusops_fnc_moduleSpawnRearmBox";
+		icon="\zeusops_addon\icons\icon_ammobox.paa";
 		scope=2; // visible in editor
 	};
 	class zeusops_ModuleToggleRespawn: zeusops_ModuleBase
 	{
 		displayName="Toggle respawn";
 		function="zeusops_fnc_moduleToggleRespawn";
+		icon="\zeusops_addon\icons\icon_respawn.paa";
 	};
 };
