@@ -29,6 +29,8 @@ class CfgFunctions
 		class functions
 		{
 			file="\zeusops_addon\functions";
+			class dynamicGroups;
+			class dynamicGroupsDisplay;
 			class getUnitUnderCursor;
 			class moduleBodybagAndRespawnPlayer;
 			class moduleBodybagPlayer;

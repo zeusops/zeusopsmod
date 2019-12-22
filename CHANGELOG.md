@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.4.0] - 2019-12-22
+### Added
+- Custom dynamic groups functions that don't show if people are dead, and don't show random insignia's.
+
 ## [1.3.0] - 2019-10-06
 ### Added
 - Icons for all modules.
