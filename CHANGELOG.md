@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.4.1] - 2020-03-22
+### Fixed
+- Fix Custom dynamic groups functions calling functions with the wrong prefix.
+
 ## [1.4.0] - 2019-12-22
 ### Added
 - Custom dynamic groups functions that don't show if people are dead, and don't show random insignia's.

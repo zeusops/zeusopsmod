@@ -214,8 +214,8 @@ switch (_mode) do
 		}
 		else
 		{
-			//["DeleteGroupLocal", [_group]] remoteExecCall ["ZO_fnc_dynamicGroups", groupOwner _group];
-			[["DeleteGroupLocal", [_group]], "ZO_fnc_dynamicGroups", groupOwner _group] call BIS_fnc_mp;
+			//["DeleteGroupLocal", [_group]] remoteExecCall ["zeusops_fnc_dynamicGroups", groupOwner _group];
+			[["DeleteGroupLocal", [_group]], "zeusops_fnc_dynamicGroups", groupOwner _group] call BIS_fnc_mp;
 		};
 	};
 
@@ -761,8 +761,8 @@ switch (_mode) do
 
 			// Add event handlers to display
 			private ["_down", "_up"];
-			_down   = _display displayAddEventHandler ["KeyDown", "['OnKeyDown', _this] call ZO_fnc_dynamicGroups;"];
-			_up     = _display displayAddEventHandler ["KeyUp", "['OnKeyUp', _this] call ZO_fnc_dynamicGroups;"];
+			_down   = _display displayAddEventHandler ["KeyDown", "['OnKeyDown', _this] call zeusops_fnc_dynamicGroups;"];
+			_up     = _display displayAddEventHandler ["KeyUp", "['OnKeyUp', _this] call zeusops_fnc_dynamicGroups;"];
 
 			// Store in ui namespace
 			missionNamespace setVariable [_varName, [_down, _up]];
@@ -1006,12 +1006,12 @@ switch (_mode) do
 		_to setVariable [VAR_INVITES, _invitations, IS_PUBLIC];
 
 		// Fire event on target computer
-		//["OnInvitationReceived", [_group, _to, _from]] remoteExecCall ["ZO_fnc_dynamicGroups", _to];
-		[["OnInvitationReceived", [_group, _to, _from]], "ZO_fnc_dynamicGroups", _to] call BIS_fnc_mp;
+		//["OnInvitationReceived", [_group, _to, _from]] remoteExecCall ["zeusops_fnc_dynamicGroups", _to];
+		[["OnInvitationReceived", [_group, _to, _from]], "zeusops_fnc_dynamicGroups", _to] call BIS_fnc_mp;
 
 		// If player was kicked from group we unkick since he was invited
-		//["UnKickPlayer", [_group, _to]] remoteExecCall ["ZO_fnc_dynamicGroups", 2];
-		[["UnKickPlayer", [_group, _to]], "ZO_fnc_dynamicGroups", false] call BIS_fnc_mp;
+		//["UnKickPlayer", [_group, _to]] remoteExecCall ["zeusops_fnc_dynamicGroups", 2];
+		[["UnKickPlayer", [_group, _to]], "zeusops_fnc_dynamicGroups", false] call BIS_fnc_mp;
 
 		// Log
 		if (LOG_ENABLED) then
@@ -1126,7 +1126,7 @@ switch (_mode) do
 
 		if (!isNull _leader && {!isNull _who} && {_leader != _who}) then
 		{
-			[["LocalShowNotification", ["DynamicGroups_PlayerJoined", [name _who], _leader]], "ZO_fnc_dynamicGroups", _leader] call BIS_fnc_mp;
+			[["LocalShowNotification", ["DynamicGroups_PlayerJoined", [name _who], _leader]], "zeusops_fnc_dynamicGroups", _leader] call BIS_fnc_mp;
 		};
 	};
 
@@ -1141,7 +1141,7 @@ switch (_mode) do
 
 		if (!isNull _who) then
 		{
-			[["LocalShowNotification", ["DynamicGroups_PlayerJoinFailed", [], _who]], "ZO_fnc_dynamicGroups", _who] call BIS_fnc_mp;
+			[["LocalShowNotification", ["DynamicGroups_PlayerJoinFailed", [], _who]], "zeusops_fnc_dynamicGroups", _who] call BIS_fnc_mp;
 		};
 	};
 
@@ -1157,7 +1157,7 @@ switch (_mode) do
 
 		if (!isNull _leader && {!isNull _who} && {_leader != _who}) then
 		{
-			[["LocalShowNotification", ["DynamicGroups_PlayerLeft", [name _who], _leader]], "ZO_fnc_dynamicGroups", _leader] call BIS_fnc_mp;
+			[["LocalShowNotification", ["DynamicGroups_PlayerLeft", [name _who], _leader]], "zeusops_fnc_dynamicGroups", _leader] call BIS_fnc_mp;
 		};
 	};
 
@@ -1199,7 +1199,7 @@ switch (_mode) do
 
 		if (!isNull _oldLeader && {!isNull _newLeader} && {_oldLeader != _newLeader}) then
 		{
-			[["LocalShowNotification", ["DynamicGroups_PromotedToLeader", [name _oldLeader], _newLeader]], "ZO_fnc_dynamicGroups", _newLeader] call BIS_fnc_mp;
+			[["LocalShowNotification", ["DynamicGroups_PromotedToLeader", [name _oldLeader], _newLeader]], "zeusops_fnc_dynamicGroups", _newLeader] call BIS_fnc_mp;
 		};
 
 		// Log
@@ -1221,7 +1221,7 @@ switch (_mode) do
 
 		if (!isNull _oldLeader && {!isNull _who} && {_oldLeader != _who}) then
 		{
-			[["LocalShowNotification", ["DynamicGroups_GroupDisbanded", [name _oldLeader], _who]], "ZO_fnc_dynamicGroups", _who] call BIS_fnc_mp;
+			[["LocalShowNotification", ["DynamicGroups_GroupDisbanded", [name _oldLeader], _who]], "zeusops_fnc_dynamicGroups", _who] call BIS_fnc_mp;
 		};
 
 		// Log
@@ -1243,7 +1243,7 @@ switch (_mode) do
 
 		if (!isNull _leader && {!isNull _who} && {_who != _leader}) then
 		{
-			[["LocalShowNotification", ["DynamicGroups_Kicked", [name _leader], _who]], "ZO_fnc_dynamicGroups", _who] call BIS_fnc_mp;
+			[["LocalShowNotification", ["DynamicGroups_Kicked", [name _leader], _who]], "zeusops_fnc_dynamicGroups", _who] call BIS_fnc_mp;
 		};
 
 		// Log
