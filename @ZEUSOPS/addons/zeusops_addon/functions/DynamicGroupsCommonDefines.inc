@@ -8,8 +8,8 @@
 	if (CONDITION) exitWith {};
 
 // Scripts
-#define GROUPS								{ _this call ZO_fnc_dynamicGroups; }
-#define DISPLAY								{ _this call ZO_fnc_dynamicGroupsDisplay; }
+#define GROUPS								{ _this call zeusops_fnc_dynamicGroups; }
+#define DISPLAY								{ _this call zeusops_fnc_dynamicGroupsDisplay; }
 
 // Variables
 #define VAR_INITIALIZED						"BIS_dg_ini"
