@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.4.2] - 2020-03-23
+### Fixed
+- Forgot to rePBO the zeusops_addon in the last fix. Yikes.
+
 ## [1.4.1] - 2020-03-22
 ### Fixed
 - Fix Custom dynamic groups functions calling functions with the wrong prefix.
