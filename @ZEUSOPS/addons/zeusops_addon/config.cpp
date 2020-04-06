@@ -12,6 +12,8 @@ class CfgPatches
 			"zeusops_ModuleForceRespawnWave",
 			"zeusops_ModuleMoveRespawnPosition",
 			"zeusops_ModuleSpawnArsenalBox",
+			"zeusops_ModuleSpawnFortificationBoxSmall",
+			"zeusops_ModuleSpawnFortificationBoxLarge",
 			"zeusops_ModuleSpawnRearmBox",
 			"zeusops_ModuleToggleRespawn"
 		};
@@ -37,6 +39,8 @@ class CfgFunctions
 			class moduleForceRespawnWave;
 			class moduleMoveRespawnPosition;
 			class moduleSpawnArsenalBox;
+			class moduleSpawnFortificationBoxLarge;
+			class moduleSpawnFortificationBoxSmall;
 			class moduleSpawnRearmBox;
 			class moduleToggleRespawn;
 			class respawnPlayer;
@@ -95,6 +99,20 @@ class CfgVehicles
 	{
 		displayName="Spawn Arsenal Box";
 		function="zeusops_fnc_moduleSpawnArsenalBox";
+		icon="\zeusops_addon\icons\icon_ammobox.paa";
+		scope=2; // visible in editor
+	};
+	class zeusops_ModuleSpawnFortificationBoxLarge: zeusops_ModuleBase
+	{
+		displayName="Spawn Fortification Box Large";
+		function="zeusops_fnc_ModuleSpawnFortificationBoxLarge";
+		icon="\zeusops_addon\icons\icon_ammobox.paa";
+		scope=2; // visible in editor
+	};
+	class zeusops_ModuleSpawnFortificationBoxSmall: zeusops_ModuleBase
+	{
+		displayName="Spawn Fortification Box Small";
+		function="zeusops_fnc_ModuleSpawnFortificationBoxSmall";
 		icon="\zeusops_addon\icons\icon_ammobox.paa";
 		scope=2; // visible in editor
 	};

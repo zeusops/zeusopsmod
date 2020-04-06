@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.5.0] - 2020-04-06
+### Added
+- `fn_moduleSpawnFortificationBoxLarge` zeus module to spawn a large fortification box.
+- `fn_moduleSpawnFortificationBoxSmall` zeus module to spawn a small fortification box.
+
+## [1.4.3] - 2020-03-24
+### Fixed
+- Forgot to include bikey.
+
 ## [1.4.2] - 2020-03-23
 ### Fixed
 - Forgot to rePBO the zeusops_addon in the last fix. Yikes.
