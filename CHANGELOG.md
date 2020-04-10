@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.5.1] - 2020-04-10
+### Fixed
+- Fix fortification boxes not showing up in zeus.
+
 ## [1.5.0] - 2020-04-06
 ### Added
 - `fn_moduleSpawnFortificationBoxLarge` zeus module to spawn a large fortification box.
