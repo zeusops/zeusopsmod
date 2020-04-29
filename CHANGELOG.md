@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.6.0] - 2020-04-29
+### Added
+- A patch to prevent under barrel smoke grenades from bouncing (by Caboose)
+
 ## [1.5.1] - 2020-04-10
 ### Fixed
 - Fix fortification boxes not showing up in zeus.
@@ -15,7 +19,7 @@
 
 ## [1.4.2] - 2020-03-23
 ### Fixed
-- Forgot to rePBO the zeusops_addon in the last fix. Yikes.
+- Forgot to rePBO the `zeusops_addon` in the last fix. Yikes.
 
 ## [1.4.1] - 2020-03-22
 ### Fixed
