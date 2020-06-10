@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.7.0] - 2020-06-11
+### Added
+- Extra uniforms and vests (by Caboose)
+
 ## [1.6.0] - 2020-04-29
 ### Added
 - A patch to prevent under barrel smoke grenades from bouncing (by Caboose)
