@@ -20,10 +20,20 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"A3_Modules_F",
-			"A3_Modules_F_Curator"
+			"A3_Modules_F_Curator",
+			"cba_common"
 		};
 	};
 };
+
+class Extended_PreInit_EventHandlers
+{
+	class zeusops_preinit
+	{
+		init="call compile preprocessFileLineNumbers '\zeusops_addon\initSettings.sqf'";
+	};
+};
+
 class CfgFunctions
 {
 	class zeusops

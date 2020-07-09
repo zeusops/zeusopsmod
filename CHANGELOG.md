@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.8.0] - 2020-07-09
+### Added
+- A patch to remove a duplicate default keybind introduced by TFAR Animations
+
 ## [1.7.0] - 2020-06-11
 ### Added
 - Extra uniforms and vests (by Caboose)
