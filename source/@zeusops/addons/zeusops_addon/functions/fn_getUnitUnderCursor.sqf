@@ -3,13 +3,10 @@
 	@file_author: Dyzalonius
 */
 
-if (isNil "Achilles_curator_init_done" || isNil "Ares_CuratorObjectPlaced_UnitUnderCursor") exitWith {objNull;};
+params ["_logic"];
 
-_curatorMouseOver = Ares_CuratorObjectPlaced_UnitUnderCursor;
+if !(local _logic) exitWith {};
 
-_unitUnderCursor = objNull;
-if (count _curatorMouseOver == 2) then {
-	_unitUnderCursor = (_curatorMouseOver select 1);
-};
+private _unit = attachedTo _logic;
 
-_unitUnderCursor;
+_unit;

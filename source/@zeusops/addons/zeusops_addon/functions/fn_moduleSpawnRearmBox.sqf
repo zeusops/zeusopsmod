@@ -10,6 +10,8 @@ if (!local _logic || !(_this select 2)) exitWith {};
 
 _pos = position _logic;
 
+private _unit = attachedTo _logic;
+
 // Find object
 _object = _logic call zeusops_fnc_getUnitUnderCursor;
 

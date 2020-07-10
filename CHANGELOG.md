@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.8.1] - 2020-07-10
+### Fixed
+- Fix modules dependency on Achilles.
+
 ## [1.8.0] - 2020-07-09
 ### Added
 - A patch to remove a duplicate default keybind introduced by TFAR Animations
