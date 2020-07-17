@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.8.2] - 2020-07-17
+### Fixed
+- Remove unnecessary line.
+
 ## [1.8.1] - 2020-07-10
 ### Fixed
 - Fix modules dependency on Achilles.
