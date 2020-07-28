@@ -12,7 +12,7 @@ class CfgPatches
 
 class CfgVehicles
 {
-class B_Soldier_base_F;
+    class B_Soldier_base_F;
 
     class ZOPS_01_F: B_Soldier_base_F
     {
@@ -23,18 +23,18 @@ class B_Soldier_base_F;
         hiddenSelections[] = {"Camo1","insignia"};
         hiddenSelectionsTextures[] = {"\ZOPS_Kit\data\gorka_winter.paa"};
 
-	};
+    };
 };
 
 class cfgWeapons
 {
-	//********************************************************************************************************************************************************************************************
+    //********************************************************************************************************************************************************************************************
     //*****            Uniforms              *****************************************************************************************************************************************************
     //********************************************************************************************************************************************************************************************
-	class UniformItem;
+    class UniformItem;
     class Uniform_Base;
-		
-	class Uniform_M93_ZOPS: Uniform_Base
+        
+    class Uniform_M93_ZOPS: Uniform_Base
     {
         scope = 2;
         author = "Jakx2210 (Caboose)";
@@ -52,22 +52,22 @@ class cfgWeapons
             armor = 0;
         };
     };
-	
-	//************************************************************************************************************************************************************************************************
+    
+    //************************************************************************************************************************************************************************************************
     //*****             Vests                *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************
     class ItemCore; 
-	class VestItem; 
+    class VestItem; 
     class Vest_Base: ItemCore 
     { 
-    class ItemInfo; 
+        class ItemInfo; 
     }; 
      
-	 
-	class vest_6b23_ZOPS: Vest_Base
+     
+    class vest_6b23_ZOPS: Vest_Base
     { 
         scope = 2; 
-		author = "Jakx2210 (Caboose)";
+        author = "Jakx2210 (Caboose)";
         displayName = "[Winter] Vest (6B23)"; 
         picture = "\ZOPS_Kit\ui\vest_test.paa"; 
         model="rhsafrf\addons\rhs_infantry\gear\vests\rhs_6b23_sniper";
@@ -78,35 +78,81 @@ class cfgWeapons
             uniformModel = "rhsafrf\addons\rhs_infantry\gear\vests\rhs_6b23_sniper";
             containerClass = "Supply120"; 
             mass = 100; 
-			allowedSlots[] = {"901"};
+            allowedSlots[] = {"901"};
             hiddenSelections[] = {"camo1","camo2"};
 
             class HitpointsProtectionInfo
             {
-			class Chest
-			{
-				HitpointName="HitChest";
-				armor=25;
-				PassThrough=0.2;
-			};
-			class Diaphragm
-			{
-				HitpointName="HitDiaphragm";
-				armor=25;
-				PassThrough=0.2;
-			};
-			class Abdomen
-			{
-				hitpointName="HitAbdomen";
-				armor=25;
-				passThrough=0.2;
-			};
-			class Body
-			{
-				hitpointName="HitBody";
-				passThrough=0.2;	
-			};
-        };  
+                class Chest
+                {
+                    HitpointName="HitChest";
+                    armor=25;
+                    PassThrough=0.2;
+                };
+                class Diaphragm
+                {
+                    HitpointName="HitDiaphragm";
+                    armor=25;
+                    PassThrough=0.2;
+                };
+                class Abdomen
+                {
+                    hitpointName="HitAbdomen";
+                    armor=25;
+                    passThrough=0.2;
+                };
+                class Body
+                {
+                    hitpointName="HitBody";
+                    passThrough=0.2;    
+                };
+            };  
+        };
     };
-};
+
+    class vest_alice_ZOPS: Vest_Base
+    { 
+        scope = 2; 
+        dlc = "RHS_GREF";
+        author = "Jakx2210 (Caboose)";
+        displayName = "Alice Webbing"; 
+        picture = "\ZOPS_Kit\ui\vest_test.paa"; 
+        model = "rhsgref\addons\rhsgref_infantry\gear_cdf\vests\rhs_alice_webbing";
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+        class ItemInfo: VestItem 
+        { 
+            uniformModel = "rhsgref\addons\rhsgref_infantry\gear_cdf\vests\rhs_alice_webbing";
+            containerClass = "Supply120"; 
+            mass = 100; 
+            allowedSlots[] = {"901"};
+
+            class HitpointsProtectionInfo
+            {
+                class Chest
+                {
+                    HitpointName="HitChest";
+                    armor=25;
+                    PassThrough=0.2;
+                };
+                class Diaphragm
+                {
+                    HitpointName="HitDiaphragm";
+                    armor=25;
+                    PassThrough=0.2;
+                };
+                class Abdomen
+                {
+                    hitpointName="HitAbdomen";
+                    armor=25;
+                    passThrough=0.2;
+                };
+                class Body
+                {
+                    hitpointName="HitBody";
+                    passThrough=0.2;    
+                };
+            };  
+        };
+    };
 };
