@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.9.0] - 2020-07-28
+### Added
+- Alice Webbing vest (by Caboose)
+
 ## [1.8.2] - 2020-07-17
 ### Fixed
 - Remove unnecessary line.
