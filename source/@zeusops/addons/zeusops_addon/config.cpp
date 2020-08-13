@@ -43,6 +43,7 @@ class CfgFunctions
 			file="\zeusops_addon\functions";
 			class dynamicGroups;
 			class dynamicGroupsDisplay;
+			class earplugs;
 			class getUnitUnderCursor;
 			class moduleBodybagAndRespawnPlayer;
 			class moduleBodybagPlayer;

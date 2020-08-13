@@ -21,3 +21,5 @@
     0,      // _holdDelay
     false    // _overwrite
 ] call cba_fnc_addKeybind;
+
+[] spawn zeusops_fnc_earplugs;

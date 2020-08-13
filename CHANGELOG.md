@@ -1,8 +1,12 @@
 # Changelog
 
+## [1.10.0] - 2020-08-13
+### Added
+- Earplugs volume control function working with ACE Earplugs.
+
 ## [1.9.0] - 2020-07-28
 ### Added
-- Alice Webbing vest (by Caboose)
+- Alice Webbing vest (by Caboose).
 
 ## [1.8.2] - 2020-07-17
 ### Fixed
@@ -14,15 +18,15 @@
 
 ## [1.8.0] - 2020-07-09
 ### Added
-- A patch to remove a duplicate default keybind introduced by TFAR Animations
+- A patch to remove a duplicate default keybind introduced by TFAR Animations.
 
 ## [1.7.0] - 2020-06-11
 ### Added
-- Extra uniforms and vests (by Caboose)
+- Extra uniforms and vests (by Caboose).
 
 ## [1.6.0] - 2020-04-29
 ### Added
-- A patch to prevent under barrel smoke grenades from bouncing (by Caboose)
+- A patch to prevent under barrel smoke grenades from bouncing (by Caboose).
 
 ## [1.5.1] - 2020-04-10
 ### Fixed
