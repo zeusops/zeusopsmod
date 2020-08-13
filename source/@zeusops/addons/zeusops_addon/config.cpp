@@ -34,6 +34,14 @@ class Extended_PreInit_EventHandlers
 	};
 };
 
+class Extended_PostInit_EventHandlers
+{
+	class zeusops_postinit
+	{
+		init="call compile preprocessFileLineNumbers '\zeusops_addon\postInit.sqf'";
+	};
+};
+
 class CfgFunctions
 {
 	class zeusops

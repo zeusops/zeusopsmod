@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.0] - 2020-08-13
+### Added
+- Keybind for Earplugs volume control.
+
+### Fixed
+- Fix error message caused by calling earplugs from preInit.
+
 ## [1.10.0] - 2020-08-13
 ### Added
 - Earplugs volume control function working with ACE Earplugs.
