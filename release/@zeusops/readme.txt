@@ -7,3 +7,4 @@ Consists of:
 - A patch to prevent under barrel smoke grenades from bouncing (by Caboose)
 - Uniforms and vests (by Caboose)
 - Keybind patch for TFAR Animations (by Gehock and Apples)
+- A patch to display medic, engineer, grenadier and marksman icons in ShackTac UI

@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.12.0] - 2020-08-22
+### Added
+- `sthudPatch` from mission-templates
+
 ## [1.11.0] - 2020-08-13
 ### Added
 - Keybind for Earplugs volume control.
