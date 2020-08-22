@@ -6,7 +6,10 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = "1.1.3";
-        requiredAddons[] = {};
+        requiredAddons[] = {
+            "rhsgref_infantry",
+            "rhs_infantry2",
+        };
     };
 };
 
@@ -33,7 +36,7 @@ class cfgWeapons
     //********************************************************************************************************************************************************************************************
     class UniformItem;
     class Uniform_Base;
-        
+
     class Uniform_M93_ZOPS: Uniform_Base
     {
         scope = 2;
@@ -52,32 +55,32 @@ class cfgWeapons
             armor = 0;
         };
     };
-    
+
     //************************************************************************************************************************************************************************************************
     //*****             Vests                *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************
-    class ItemCore; 
-    class VestItem; 
-    class Vest_Base: ItemCore 
-    { 
-        class ItemInfo; 
-    }; 
-     
-     
+    class ItemCore;
+    class VestItem;
+    class Vest_Base: ItemCore
+    {
+        class ItemInfo;
+    };
+
+
     class vest_6b23_ZOPS: Vest_Base
-    { 
-        scope = 2; 
+    {
+        scope = 2;
         author = "Jakx2210 (Caboose)";
-        displayName = "[Winter] Vest (6B23)"; 
-        picture = "\ZOPS_Kit\ui\vest_test.paa"; 
+        displayName = "[Winter] Vest (6B23)";
+        picture = "\ZOPS_Kit\ui\vest_test.paa";
         model="rhsafrf\addons\rhs_infantry\gear\vests\rhs_6b23_sniper";
-        hiddenSelections[] = {"camo1","camo2"}; 
-        hiddenSelectionsTextures[] = {"ZOPS_Kit\Data\6b23_winter.paa","rhsafrf\addons\rhs_infantry\data\gearpack1_6sh92_co.paa"}; 
-        class ItemInfo: VestItem 
-        { 
+        hiddenSelections[] = {"camo1","camo2"};
+        hiddenSelectionsTextures[] = {"ZOPS_Kit\Data\6b23_winter.paa","rhsafrf\addons\rhs_infantry\data\gearpack1_6sh92_co.paa"};
+        class ItemInfo: VestItem
+        {
             uniformModel = "rhsafrf\addons\rhs_infantry\gear\vests\rhs_6b23_sniper";
-            containerClass = "Supply120"; 
-            mass = 100; 
+            containerClass = "Supply120";
+            mass = 100;
             allowedSlots[] = {"901"};
             hiddenSelections[] = {"camo1","camo2"};
 
@@ -104,27 +107,27 @@ class cfgWeapons
                 class Body
                 {
                     hitpointName="HitBody";
-                    passThrough=0.2;    
+                    passThrough=0.2;
                 };
-            };  
+            };
         };
     };
 
     class vest_alice_ZOPS: Vest_Base
-    { 
-        scope = 2; 
+    {
+        scope = 2;
         dlc = "RHS_GREF";
         author = "Jakx2210 (Caboose)";
-        displayName = "Alice Webbing"; 
-        picture = "\ZOPS_Kit\ui\vest_test.paa"; 
+        displayName = "Alice Webbing";
+        picture = "\ZOPS_Kit\ui\vest_test.paa";
         model = "rhsgref\addons\rhsgref_infantry\gear_cdf\vests\rhs_alice_webbing";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
-        class ItemInfo: VestItem 
-        { 
+        class ItemInfo: VestItem
+        {
             uniformModel = "rhsgref\addons\rhsgref_infantry\gear_cdf\vests\rhs_alice_webbing";
-            containerClass = "Supply120"; 
-            mass = 100; 
+            containerClass = "Supply120";
+            mass = 100;
             allowedSlots[] = {"901"};
 
             class HitpointsProtectionInfo
@@ -150,9 +153,9 @@ class cfgWeapons
                 class Body
                 {
                     hitpointName="HitBody";
-                    passThrough=0.2;    
+                    passThrough=0.2;
                 };
-            };  
+            };
         };
     };
 };
