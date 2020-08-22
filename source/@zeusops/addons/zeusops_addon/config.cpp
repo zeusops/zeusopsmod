@@ -1,3 +1,5 @@
+#include "CfgEventHandlers.hpp"
+
 class CfgPatches
 {
 	class zeusops_addon
@@ -23,22 +25,6 @@ class CfgPatches
 			"A3_Modules_F_Curator",
 			"cba_common"
 		};
-	};
-};
-
-class Extended_PreInit_EventHandlers
-{
-	class zeusops_preinit
-	{
-		init="call compile preprocessFileLineNumbers '\zeusops_addon\initSettings.sqf'";
-	};
-};
-
-class Extended_PostInit_EventHandlers
-{
-	class zeusops_postinit
-	{
-		init="call compile preprocessFileLineNumbers '\zeusops_addon\postInit.sqf'";
 	};
 };
 
