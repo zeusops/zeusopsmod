@@ -50,6 +50,7 @@ class CfgFunctions
 			class moduleToggleRespawn;
 			class respawnPlayer;
 			class showCuratorMessage;
+			class sthudPatch;
 		};
 	};
 };
