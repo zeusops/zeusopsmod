@@ -1,7 +1,14 @@
+diag_log "pre";
+
+if (isDedicated) exitWith {};
+
+diag_log "post";
+
 STHud_IsMedic = {
     params ["_unit"];
     (_unit getVariable ["Ace_medical_medicClass", 0]) >= 1;
 };
+diag_log "sthudpatch asd 1";
 
 STHud_IsEngineer = {
     params ["_unit"];
@@ -13,14 +20,14 @@ STHud_IsEngineer = {
     _isEngineer >= 1;
 };
 
+diag_log "sthudpatch 2";
 STHud_IsAT = {
     params ["_type"];
     _has_at = getText(configFile >> "CfgWeapons" >> _type >>
         "UIPicture") == "\a3\weapons_f\data\ui\icon_at_ca.paa";
     if (_has_at) exitWith {
-        _has_rhs =
-        if (getNumber(configfile >> "CfgWeapons" >> _type >>
-                "rhs_disposable") == 1) exitWith {
+        _has_rhs = if (getNumber(
+                configfile >> "CfgWeapons" >> _type >> "rhs_disposable") == 1) exitWith {
             false;
         };
         if (!isNil {
@@ -39,6 +46,7 @@ STHud_IsAT = {
     false;
 };
 
+diag_log "sthudpatch 3";
 STHud_IsMarksman = {
     params ["_unit"];
     scopeClassname = (primaryWeaponItems _unit) select 2;
@@ -57,6 +65,7 @@ STHud_IsMarksman = {
     (selectMin magnifications) < 0.066;
 };
 
+diag_log "sthudpatch 4";
 STHud_IsGrenadier = {
     params ["_unit"];
     muzzleCount = count getArray(configfile >> "CfgWeapons" >>
@@ -66,19 +75,21 @@ STHud_IsGrenadier = {
 
 STHud_Icon_Real = STHud_Icon;
 
+diag_log "sthudpatch 5";
 STHud_Icon = {
     params [
         "_unit",
         ["_disableVehicleIcons", true]
     ];
 
+    if (_unit call STHud_IsMarksman) exitWith {
+        "\zeusops_addon\icons\iconManMarksman_ca.paa";
+    };
+
     _icon = [_unit, _disableVehicleIcons] call STHud_Icon_Real;
     if (_icon == STHud_BGIcon) exitWith {
         if (_unit call STHud_IsEngineer) exitWith {
             "\A3\ui_f\data\map\vehicleicons\iconManEngineer_ca.paa";
-        };
-        if (_unit call STHud_IsMarksman) exitWith {
-            "\zeusops_addon\icons\iconManMarksman_ca.paa";
         };
         if (_unit call STHud_IsGrenadier) exitWith {
             "\A3\ui_f\data\map\vehicleicons\iconmanexplosive_ca.paa";
@@ -87,3 +98,4 @@ STHud_Icon = {
     };
     _icon;
 };
+diag_log "sthudpatch 6";

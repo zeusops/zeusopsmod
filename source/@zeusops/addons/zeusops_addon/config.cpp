@@ -23,7 +23,8 @@ class CfgPatches
 		{
 			"A3_Modules_F",
 			"A3_Modules_F_Curator",
-			"cba_common"
+			"cba_common",
+			"stui_core"
 		};
 	};
 };
