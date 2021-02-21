@@ -1,15 +1,15 @@
 fn_bodybag_player = {
-	diag_log format ["[fn_bodybag_player] params: %1", _this joinString ", "];
+	format ["[fn_bodybag_player] params: %1", _this joinString ", "] remoteExec ["diag_log", 2];
 	_logic = _this param [0,objNull];
 
 	// Exit if module wasn't created by this instance
 	if (!local _logic) exitWith {
-		diag_log "[fn_bodybag_player] exiting: not local";
+		"[fn_bodybag_player] exiting: not local" remoteExec ["diag_log", 2];
 	};
 	if (!(_this select 2)) then {
-		diag_log "[fn_bodybag_player] DEBUG NOT ACTIVE: module not active, continuing";
+		"[fn_bodybag_player] DEBUG NOT ACTIVE: module not active, continuing" remoteExec ["diag_log", 2];
 	};
-	diag_log "[fn_bodybag_player] passed checks";
+	"[fn_bodybag_player] passed checks" remoteExec ["diag_log", 2];
 
 	// Find player
 	_player = objNull;
