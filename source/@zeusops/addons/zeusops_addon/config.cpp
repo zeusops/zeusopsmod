@@ -50,6 +50,13 @@ class CfgFunctions
 			class moduleToggleRespawn;
 			class respawnPlayer;
 			class showCuratorMessage;
+			class define_bodybag_player;
+			class define_bodybag_respawn;
+			class define_force_respawn;
+			class define_move_respawn;
+			class define_spawn_arsenal;
+			class define_spawn_rearm;
+			class define_toggle_respawn;
 		};
 	};
 };

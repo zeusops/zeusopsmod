@@ -5,7 +5,9 @@
 
 params ["_logic"];
 
-if !(local _logic) exitWith {};
+if !(local _logic) exitWith {
+	diag_log "[fn_getUnitUnderCursor] exiting: not local";
+};
 
 private _unit = attachedTo _logic;
 
