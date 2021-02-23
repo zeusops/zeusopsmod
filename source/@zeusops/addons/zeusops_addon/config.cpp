@@ -115,6 +115,7 @@ class CfgVehicles
 		displayName="Move respawn position";
 		function="zeusops_fnc_moduleMoveRespawnPosition";
 		icon="\zeusops_addon\icons\icon_respawn.paa";
+		curatorCanAttach = 1;
 	};
 	class zeusops_ModuleSpawnArsenalBox: zeusops_ModuleBase
 	{
