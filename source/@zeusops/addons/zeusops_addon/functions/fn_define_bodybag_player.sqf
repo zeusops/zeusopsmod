@@ -22,7 +22,7 @@ fn_bodybag_player = {
 	// Bodybag if player is found
 	if (!(isNull _player)) then {
 		_player setDamage 1;
-		[objNull, _player] call ace_medical_fnc_actionPlaceInBodyBag;
+		[objNull, _player] call ace_medical_treatment_fnc_placeInBodyBag;
 		"Bodybagged player" call zeusops_fnc_showCuratorMessage;
 	} else {
 		"Module needs to be placed on player" call zeusops_fnc_showCuratorMessage;
