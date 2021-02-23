@@ -6,7 +6,7 @@
 _logic = _this param [0,objNull];
 
 // Exit if module wasn't created by this instance, or if it's not activated
-if (!local _logic || !(_this select 2)) exitWith {};
+if (!local _logic) exitWith {};
 
 _pos = position _logic;
 
