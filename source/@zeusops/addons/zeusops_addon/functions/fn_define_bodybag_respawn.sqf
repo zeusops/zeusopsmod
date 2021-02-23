@@ -1,6 +1,6 @@
 fn_bodybag_respawn = {
 	_type = if (isServer) then { "server" } else { format ["player: %1", name player] };
-	format ["[ZOPS] [fn_spawn_arsenal] %1, params: %2", _type, _this joinString ", "] remoteExec ["diag_log", 2];
+	format ["[ZOPS] [fn_bodybag_respawn] %1, params: %2", _type, _this joinString ", "] remoteExec ["diag_log", 2];
 	_logic = _this param [0,objNull];
 
 	// Exit if module wasn't created by this instance

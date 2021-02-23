@@ -6,7 +6,7 @@
 params ["_logic"];
 
 if !(local _logic) exitWith {
-	diag_log "[fn_getUnitUnderCursor] exiting: not local";
+	diag_log "[ZOPS] [fn_getUnitUnderCursor] exiting: not local";
 };
 
 private _unit = attachedTo _logic;
