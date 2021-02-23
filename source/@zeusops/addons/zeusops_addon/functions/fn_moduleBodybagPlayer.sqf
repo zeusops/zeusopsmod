@@ -20,7 +20,9 @@ if (_object in allPlayers) then {
 // Bodybag if player is found
 if (!(isNull _player)) then {
 	_player setDamage 1;
-	[objNull, _player] call ace_medical_fnc_actionPlaceInBodyBag;
+	// Wait a bit for the death to register before bagging
+	sleep 0.1;
+	[objNull, _player] call ace_medical_treatment_fnc_placeInBodyBag;
 	"Bodybagged player" call zeusops_fnc_showCuratorMessage;
 } else {
 	"Module needs to be placed on player" call zeusops_fnc_showCuratorMessage;

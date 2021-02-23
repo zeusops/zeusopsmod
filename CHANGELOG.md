@@ -7,6 +7,9 @@
   We are moving into using DUI Squad Radar instead, so there is no need to
   bundle STUI files in this mod anymore.
 
+### Fixed
+- Make bodybagging work properly again.
+
 ## [1.12.0] - 2021-03-30
 ### Added
 - Athena hack to hide other players

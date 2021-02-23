@@ -20,7 +20,9 @@ if (_object in allPlayers) then {
 // Bodybag and respawn if player found
 if (!(isNull _player)) then {
 	_player setDamage 1;
-	[objNull, _player] call ace_medical_fnc_actionPlaceInBodyBag;
+	// Wait a bit for the death to register before bagging
+	sleep 0.1;
+	[objNull, _player] call ace_medical_treatment_fnc_placeInBodyBag;
 	[] remoteExec ["zeusops_fnc_respawnPlayer", _player];
 	"Bodybagged and respawned player" call zeusops_fnc_showCuratorMessage;
 } else {
