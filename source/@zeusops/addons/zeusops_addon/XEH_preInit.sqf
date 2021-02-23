@@ -1,3 +1,4 @@
+diag_log "[ZOPS] preInit start";
 #include "initSettings.sqf"
 
 // Define functions here early before Athena has a chance to define them
@@ -12,3 +13,4 @@ fnc_gatherVehicles   = compileFinal preprocessFileLineNumbers "\zeusops_addon\at
 [] call zeusops_fnc_define_spawn_arsenal;
 [] call zeusops_fnc_define_spawn_rearm;
 [] call zeusops_fnc_define_toggle_respawn;
+diag_log "[ZOPS] preInit done";
