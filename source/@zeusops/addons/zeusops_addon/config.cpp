@@ -76,7 +76,7 @@ class CfgVehicles
 		category="zeusops_modules";
 		scope=1; // not visible in editor
 		scopeCurator = 2; // visible in zeus
-		isGlobal=2; // ran globally
+		isGlobal=1; // ran globally
 		functionPriority=1;
 		isTriggerActivated=0;
 		isDisposable=1;
