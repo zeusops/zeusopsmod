@@ -71,7 +71,8 @@ class CfgVehicles
 {
 	class Logic;
 	class Module_F: Logic {};
-	class zeusops_ModuleBase : Module_F
+	class zen_modules_moduleBase;
+	class zeusops_ModuleBase : zen_modules_moduleBase
 	{
 		category="zeusops_modules";
 		scope=1; // not visible in editor
