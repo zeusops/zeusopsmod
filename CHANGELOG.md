@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [1.12.0] - 2021-03-30
 ### Added
 - Athena hack to hide other players
 
