@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased]
+### Added
+- Athena hack to hide other players
+
+  Hides other units and vehicles except the player and player's vehicle from
+  Athena by default. Follows a missionNamespace variable "ath_all_data" to
+  determine whether all data should be displayed.
+
 ## [1.11.0] - 2020-08-13
 ### Added
 - Keybind for Earplugs volume control.
