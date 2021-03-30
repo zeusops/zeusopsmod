@@ -1,7 +1,8 @@
 fn_move_respawn = {
 	_type = if (isServer) then { "server" } else { format ["player: %1", name player] };
-	format ["[ZOPS] [fn_move_respawn] %1, params: %2", _type, _this joinString ", "] remoteExec ["diag_log", 2];
 	_logic = _this param [0,objNull];
+	[_logic, _type] remoteExec ["fn_log_owner", 2];
+	format ["[ZOPS] [fn_move_respawn] %1, isNull: %2. clientOwner: %3, params: %4", _type, isNull _logic, clientOwner, _this joinString ", "] remoteExec ["diag_log", 2];
 
 	// Exit if module wasn't created by this instance
 	if (!local _logic) exitWith {
