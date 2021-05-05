@@ -1,5 +1,12 @@
 # Changelog
 
+## [Unreleased]
+### Removed
+- Files related to Shacktac UI (stui)
+
+  We are moving into using DUI Squad Radar instead, so there is no need to
+  bundle STUI files in this mod anymore.
+
 ## [1.12.0] - 2021-03-30
 ### Added
 - Athena hack to hide other players
