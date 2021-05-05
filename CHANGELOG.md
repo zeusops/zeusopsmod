@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [1.13.0] - 2021-05-05
 ### Removed
 - Files related to Shacktac UI (stui)
 
