@@ -1,0 +1,42 @@
+3x  rhsus_acc_acog_wd
+1x  rhsusf_acc_t1_low_fwd
+22x optic_lrps
+6x  uk3cb_baf_maxikite
+    Root
+        opticsZoomInit = 0.75;
+        opticsZoomMax = 1.25;
+        opticsZoomMin = 0.25;
+    Kite
+        opticsZoomInit = 0.0417;
+        opticsZoomMax = 0.0417;
+        opticsZoomMin = 0.0417;
+    Iron
+        opticsZoomInit = 0.75;
+        opticsZoomMax = 1.25;
+        opticsZoomMin = 0.25;
+4x  uk3cb_baf_kite
+    Root
+        opticsZoomInit = 0.75;
+        opticsZoomMax = 1.25;
+        opticsZoomMin = 0.25;
+    Kite
+        opticsZoomInit = 0.0625;
+        opticsZoomMax = 0.0625;
+        opticsZoomMin = 0.0625;
+    Iron
+        opticsZoomInit = 0.75;
+        opticsZoomMax = 1.25;
+        opticsZoomMin = 0.25;
+4x  hlc_optic_hensoldtzo_lo
+    Root
+
+    Iron
+
+    Snip
+        opticsZoomInit = 0.06225;
+        opticsZoomMax = 0.06225;
+        opticsZoomMin = 0.06225;
+
+configfile >> "CfgWeapons" >> "hlc_optic_HensoldtZO_Lo" >> "ItemInfo" >>
+ "OpticsModes" >> "Snip"
+ bin\config.bin/CfgWeapons/hlc_optic_HensoldtZO_Hi/ItemInfo/OpticsModes
