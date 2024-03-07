@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.14.0] - 2024-03-07
+
+### Fixed
+
+- Fix bodybagging after an ACE update a while back.
+
 ## [1.13.0] - 2021-05-05
 ### Removed
 - Files related to Shacktac UI (stui)
